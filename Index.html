@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="box">
+        <div class="form">
+            <h2>Iniciar sesión</h2>
+            <form id="loginForm">
+                <div class="inputbox">
+                    <input type="text" id="username" required>
+                    <span>Usuario</span>
+                </div>
+                <div class="inputbox">
+                    <input type="password" id="password" required>
+                    <span>Contraseña</span>
+                </div>
+                <input type="submit" value="Iniciar sesión" class="sub">
+            </form>
+            <p>¿No tienes cuenta? <a href="#" id="registerLink">Crear cuenta</a></p>
+        </div>
+    </div>
+
+    <!-- Formulario de Registro (oculto al principio) -->
+    <div class="form" id="registerForm" style="display:none;">
+        <h2>Crear cuenta</h2>
+        <form id="registerSubmit">
+            <div class="inputbox">
+                <input type="text" id="registerid" required>
+                <span>Id</span>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="registerUsername" required>
+                <span>Usuario</span>
+            </div>
+            <div class="inputbox">
+                <input type="password" id="registerPassword" required>
+                <span>Contraseña</span>
+            </div>
+            <input type="submit" value="Registrar cuenta" class="sub">
+        </form>
+    </div>
+    <script type="module" src="index.js"></script>
+   
+</body>
+</html>

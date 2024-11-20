@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control</title>
+    <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+    <h2>Panel de Control</h2>
+    <div>
+        Estado de la alarma: <span id="estadoTexto">Cargando...</span>
+    </div>
+    <button id="toggleAlarma">Activar Alarma</button>
+    <button id="consultarHistorial">Consultar Historial</button>
+    <button id="logout">Cerrar Sesión</button>
+    <div id="historial"></div>
+    <div id="programacionAlarma">
+        <h3>Programar Alarma</h3>
+        <form id="scheduleForm">
+            <label for="horaInicio">Hora de Inicio:</label>
+            <input type="time" id="horaInicio" required>
+            
+            <label for="horaFin">Hora de Fin:</label>
+            <input type="time" id="horaFin" required>
+            
+            <button type="submit">Guardar Programación</button>
+        </form>
+    </div>
+    <script type="module" src="panel.js"></script>
+</body>
+</html>
